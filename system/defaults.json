@@ -1,0 +1,10 @@
+{
+    "default_credentials": [
+      {"user": "admin", "pass": "admin"},
+      {"user": "root", "pass": "root"},
+      {"user": "user", "pass": "user"}
+    ],
+    "snmp_communities": ["public", "private"],
+    "scan_ports": [22, 23, 80, 443, 161]
+  }
+  

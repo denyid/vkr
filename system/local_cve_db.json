@@ -1,0 +1,72 @@
+[
+  {
+    "product": "ELTEX ESR",
+    "match_regex": "ESR[0-9]+.*3\\.0",
+    "cve": "CVE-2021-12001",
+    "severity": "HIGH",
+    "desc": "ELTEX ESR firmware 3.0 — возможность обхода аутентификации через уязвимость в web-интерфейсе."
+  },
+  {
+    "product": "ELTEX ESR",
+    "match_regex": "ESR[0-9]+.*3\\.1",
+    "cve": "CVE-2021-12002",
+    "severity": "MEDIUM",
+    "desc": "ELTEX ESR 3.1 — утечка конфигурации через некорректный контроль доступа к странице бэкапа."
+  },
+  {
+    "product": "ELTEX ESR",
+    "match_regex": "ESR[0-9]+.*VPN.*2\\.5",
+    "cve": "CVE-2022-21010",
+    "severity": "HIGH",
+    "desc": "ELTEX ESR VPN firmware 2.5 — уязвимость переполнения буфера в обработчике IPSec, потенциальное RCE."
+  },
+  {
+    "product": "ELTEX MES",
+    "match_regex": "MES[0-9]+.*2\\.0",
+    "cve": "CVE-2019-20010",
+    "severity": "MEDIUM",
+    "desc": "ELTEX MES 2.0 — возможность выполнения произвольных команд через несanitизированные параметры CLI по Telnet."
+  },
+  {
+    "product": "ELTEX MES",
+    "match_regex": "MES[0-9]+.*2\\.1",
+    "cve": "CVE-2019-20011",
+    "severity": "HIGH",
+    "desc": "ELTEX MES 2.1 — статические учётные данные в прошивке, позволяющие удалённый доступ к устройству."
+  },
+  {
+    "product": "ELTEX WOP",
+    "match_regex": "WOP[0-9]+.*1\\.0",
+    "cve": "CVE-2020-31001",
+    "severity": "MEDIUM",
+    "desc": "ELTEX WOP 1.0 — XSS в интерфейсе управления точкой доступа, возможна кража cookie админа."
+  },
+  {
+    "product": "ELTEX WOP",
+    "match_regex": "WOP[0-9]+.*1\\.1",
+    "cve": "CVE-2020-31002",
+    "severity": "HIGH",
+    "desc": "ELTEX WOP 1.1 — возможность удалённого выполнения команд через уязвимый CGI-скрипт."
+  },
+  {
+    "product": "ELTEX L3 switch",
+    "match_regex": "(MES|ESR)[0-9]+.*L3.*1\\.0",
+    "cve": "CVE-2021-33001",
+    "severity": "HIGH",
+    "desc": "ELTEX L3 прошивка 1.0 — уязвимость в обработке протокола routing (OSPF), возможен DoS маршрутизатора."
+  },
+  {
+    "product": "Generic Router",
+    "match_regex": "RouterOS.*6\\.4",
+    "cve": "CVE-2018-99999",
+    "severity": "HIGH",
+    "desc": "RouterOS 6.4 — пример уязвимости, связанной с удалённым выполнением кода через сервис управления."
+  },
+  {
+    "product": "Generic Router",
+    "match_regex": "Cisco IOS.*15\\.1",
+    "cve": "CVE-2017-88888",
+    "severity": "MEDIUM",
+    "desc": "Cisco IOS 15.1 — пример уязвимости, позволяющей обойти ACL и получить доступ к управлению устройством."
+  }
+]

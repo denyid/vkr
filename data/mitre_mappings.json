@@ -1,0 +1,82 @@
+[
+  {
+    "id": "T1046",
+    "name": "Network Service Discovery",
+    "detection_rules": ["telnet_open", "many_open_ports"]
+  },
+  {
+    "id": "T1016",
+    "name": "System Network Configuration Discovery",
+    "detection_rules": ["snmp_sysdescr"]
+  },
+  {
+    "id": "T1190",
+    "name": "Exploit Public-Facing Application",
+    "detection_rules": ["http_fw", "known_cve", "known_cve_high"]
+  },
+  {
+    "id": "T1021",
+    "name": "Remote Services (SSH/HTTP/RDP/FTP)",
+    "detection_rules": ["ssh_open", "http_open", "rdp_open", "ftp_open"]
+  },
+  {
+    "id": "T1133",
+    "name": "External Remote Services (VPN)",
+    "detection_rules": ["vpn_ike_open", "openvpn_udp_open"]
+  },
+  {
+    "id": "T1498",
+    "name": "Network Denial of Service (Amplification)",
+    "detection_rules": ["ssdp_reflection", "ntp_amplifier", "dns_open_resolver"]
+  },
+  {
+    "id": "T1552",
+    "name": "Unsecured Credentials",
+    "detection_rules": ["snmp_public_community", "telnet_open"]
+  },
+  {
+    "id": "T1048",
+    "name": "Exfiltration Over Alternative Protocol",
+    "detection_rules": ["ftp_open", "mysql_open"]
+  },
+  {
+    "id": "T1557",
+    "name": "Adversary-in-the-Middle",
+    "detection_rules": ["http_no_https"]
+  },
+  {
+    "id": "T1590",
+    "name": "Gather Victim Network Information",
+    "detection_rules": ["dns_open_resolver", "snmp_sysdescr"]
+  },
+  {
+    "id": "T1595",
+    "name": "Active Scanning",
+    "detection_rules": [
+      "many_open_ports",
+      "ssh_open",
+      "http_open",
+      "vpn_ike_open",
+      "openvpn_udp_open"
+    ]
+  },
+  {
+    "id": "T1595.002",
+    "name": "Active Scanning: Vulnerability Scanning",
+    "detection_rules": [
+      "known_cve",
+      "known_cve_high"
+    ]
+  },
+  {
+    "id": "T1078.001",
+    "name": "Valid Accounts: Default Accounts",
+    "detection_rules": [
+      "snmp_public_community",
+      "telnet_open"
+    ]
+  }
+
+]
+
+  

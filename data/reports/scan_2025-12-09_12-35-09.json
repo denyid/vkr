@@ -1,0 +1,148 @@
+[
+  {
+    "ip": "192.168.1.7",
+    "alive": true,
+    "ports": {
+      "22": {
+        "state": "open",
+        "banner": "SSH-2.0-OpenSSH_8.2\r\n"
+      },
+      "23": {
+        "state": "open",
+        "banner": ""
+      },
+      "80": {
+        "state": "open",
+        "banner": ""
+      },
+      "161": {
+        "state": "open",
+        "banner": ""
+      },
+      "139": {
+        "state": "open",
+        "banner": ""
+      },
+      "5001": {
+        "state": "open",
+        "banner": ""
+      },
+      "443": {
+        "state": "open",
+        "banner": ""
+      },
+      "5000": {
+        "state": "open",
+        "banner": ""
+      }
+    },
+    "special_ports": {
+      "22": {
+        "state": "open",
+        "banner": "SSH-2.0-OpenSSH_8.2\r\n"
+      },
+      "23": {
+        "state": "open",
+        "banner": ""
+      },
+      "80": {
+        "state": "open",
+        "banner": ""
+      },
+      "443": {
+        "state": "open",
+        "banner": ""
+      }
+    },
+    "udp_ports": {},
+    "udp_special_ports": {},
+    "snmp": "Linux denyidStr 3.10.108 #42218 SMP Mon Jan 16 17:48:29 CST 2023 armv7l",
+    "cves": [],
+    "mitre": [
+      {
+        "technique_id": "T1046",
+        "technique_name": "Network Service Discovery",
+        "rule": "telnet_open",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1016",
+        "technique_name": "System Network Configuration Discovery",
+        "rule": "snmp_sysdescr",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1021",
+        "technique_name": "Remote Services (SSH/HTTP/RDP/FTP)",
+        "rule": "ssh_open",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1021",
+        "technique_name": "Remote Services (SSH/HTTP/RDP/FTP)",
+        "rule": "http_open",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1552",
+        "technique_name": "Unsecured Credentials",
+        "rule": "telnet_open",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1590",
+        "technique_name": "Gather Victim Network Information",
+        "rule": "snmp_sysdescr",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1595",
+        "technique_name": "Active Scanning",
+        "rule": "ssh_open",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1595",
+        "technique_name": "Active Scanning",
+        "rule": "http_open",
+        "confidence": "medium"
+      },
+      {
+        "technique_id": "T1078.001",
+        "technique_name": "Valid Accounts: Default Accounts",
+        "rule": "telnet_open",
+        "confidence": "medium"
+      }
+    ],
+    "tls": {
+      "subject": {
+        "countryName": "TW",
+        "localityName": "Taipei",
+        "organizationName": "Synology Inc.",
+        "commonName": "synology"
+      },
+      "issuer": {
+        "countryName": "TW",
+        "localityName": "Taipei",
+        "organizationName": "Synology Inc.",
+        "commonName": "Synology Inc. CA"
+      },
+      "notBefore": "2025-04-14T16:29:22",
+      "notAfter": "2026-04-15T16:29:22"
+    },
+    "risk": 49,
+    "issues": [
+      {
+        "id": "TELNET_OPEN",
+        "title": "Открыт Telnet (23/tcp)",
+        "severity": "HIGH",
+        "description": "На устройстве доступен Telnet. Протокол передаёт пароли в открытом виде и считается небезопасным.",
+        "recommendation": "Отключить Telnet и использовать SSH (22/tcp). Если отключить нельзя — ограничить доступ ACL и/или через VPN."
+      }
+    ],
+    "advice": "Общая оценка риска для 192.168.1.7: 49/100 (умеренный уровень). Тем не менее стоит убедиться, что управленческие интерфейсы доступны только из админской сети, а прошивка обновлена.",
+    "scanned_ports_count": 424,
+    "udp_scanned_ports_count": 0,
+    "scan_mode": "quick"
+  }
+]
